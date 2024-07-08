@@ -155,6 +155,9 @@ public class ProjectEulerSolver {
         }
         return i - 1;
     }
+    public static long ProjectEuler8() {
+        return 0; //placeholder return
+    }
     public static long ProjectEuler9() {
         long product = 1;
         long a = 1;
