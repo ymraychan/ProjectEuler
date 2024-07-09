@@ -10,6 +10,7 @@ public class RunProject {
         System.out.println(ProjectEulerSolver.ProjectEuler8());
         System.out.println(ProjectEulerSolver.ProjectEuler9());
         System.out.println(ProjectEulerSolver.ProjectEuler10());
+        System.out.println(ProjectEulerSolver.ProjectEuler13());
         System.out.println(ProjectEulerSolver.ProjectEuler16());
         System.out.println(ProjectEulerSolver.ProjectEuler20());
         System.out.println(ProjectEulerSolver.ProjectEuler48());
