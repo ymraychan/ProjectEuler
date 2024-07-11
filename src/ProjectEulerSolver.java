@@ -201,6 +201,18 @@ public class ProjectEulerSolver {
         }
         return sum;
     }
+    public static long ProjectEuler12() {
+        for (long x = 1; x < 1000000; x++) {
+            long numOfDivisors = 0;
+            long tx = MathClass.triangleNumber(x);
+            for (long i = 1; i < Math.sqrt(tx) ;i++) {
+                if (tx % i == 0) numOfDivisors += 2; 
+            }
+            if (numOfDivisors >= 500)
+                return tx;
+        }
+        return 0; // search failed
+    }   
     public static String ProjectEuler13(){
         String string = """
             37107287533902102798797998220837590246510135740250
