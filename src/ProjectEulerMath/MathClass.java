@@ -7,11 +7,12 @@ import java.util.List;
 
 public class MathClass {
     public static BigInteger factorial(BigInteger n) {
-        if (n.equals(BigInteger.ZERO)) {
-            return BigInteger.ONE;
-        } else {
-            return n.multiply(factorial(n.subtract(BigInteger.ONE)));
+        BigInteger result = BigInteger.ONE;
+        while (!n.equals(BigInteger.ZERO)) {
+            result = result.multiply(n);
+            n = n.subtract(BigInteger.ONE);
         }
+        return result;
     }
     public static List<Integer> Fibonacci(int largest_num){
         List<Integer> list = new ArrayList<>();
