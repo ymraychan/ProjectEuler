@@ -350,5 +350,11 @@ public class ProjectEulerSolver {
             }
             return last_ten_digits;
         }
+    public static long ProjectEuler97(){
+        BigInteger value = (BigInteger.TWO).pow(7830457);
+        value = value.multiply(BigInteger.valueOf(28433));
+        value = value.add(BigInteger.ONE);
+        return (value.mod(BigInteger.valueOf(10000000000L))).longValue();
+    }
 }
 
